@@ -1,0 +1,383 @@
+/*body{
+    margin: 0;
+    padding: 0;
+    background: white
+}*/
+
+nav{
+    width: 100%;
+    overflow:auto;
+    background: white;
+}
+
+
+ul{
+    padding: 100px 100px;
+    margin: 0 0 0 250px;
+    list-style: none;
+
+}
+
+
+
+li{
+    /*float: left;*/
+    display: inline-block;
+    width: 150px;
+
+}
+
+li a {
+
+    display: inline-block;
+    padding: 20px 50 px;
+    text-decoration: none;
+    font-family: Helvetica;
+    color: black;
+    text-align: center;
+}
+/*edit bullshit here */
+
+
+.cool-link::after{
+content:'';
+display: block;
+width: 0;
+height: 2px;
+background: black;
+transition: width .3s
+}
+
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.logo img{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+/*sliderbitstartshere*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    height: 55vh;
+    width: 78vw;
+    /*overflow: hidden;*/
+
+}
+
+
+.slider-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.slider-container > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 1;
+
+}
+
+.slider-container > div > div{
+    overflow: hidden;
+    box-shadow: 0 0 61px 0 rgba(0,0,0,0.62);
+}
+
+.slider{
+    width: 800px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(5,100%);
+ 
+}
+
+/*para as fotos do PET*/
+.slider1{
+    width: 800px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(7,100%);
+ 
+}
+
+.img{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.content{
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    
+}
+
+/*notsureitsrelevant
+.content:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 17%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.8));
+}*/
+
+.btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+    background-color: #ddd;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .3s;
+
+}
+
+#prev{
+    left: 5%;
+}
+
+#next{
+    right: 5%;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+/*trying to use same tag twice...*/
+/*ups doesnt work...will just use u1 instead...*/
+ul1{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex;
+}
+
+ul1 li{
+    width: 18px;
+    height: 18px;
+    margin: .3rem;
+    border: 2.5px solid #2ecc71;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul1 li.colored{
+    background-color: #2ecc71;
+}
+
+/* prob not useful
+.content:before{
+	content: '';
+	position: absolute;
+	height: 17%;
+	width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+
+
+aside{
+    position: right;
+    height: 80vh;
+    width: 100vw;
+}*/
+
+img#yt {
+    position: absolute;
+    top: -1vh;
+    left: 157vh;
+}
+
+img#fb {
+    position: absolute;
+    top: 22vh;
+    left: 157vh;
+}
+
+img#insta {
+    position: absolute;
+    top: 45vh;
+    left: 157vh;
+}
+
+.button1{
+    background: black;
+    color: white;
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+    font-family: Helvetica;
+    border-radius: 8px;
+}
+
+.button1:hover{
+    position: relative;
+}
+
+.button1:hover:after{
+    content: url(letter-icon20.png);
+    display: block;
+    position: absolute;
+    left: 112px;
+    top: 28px;
+}
+
+
+.simple-box{
+    color:black;
+    background: lightgray;
+    display: block;  position: absolute;
+    width: 800px;
+    height: 450px;
+    top: -30px;
+    left: 125px;
+    border: 5px solid black;
+    border-radius: 8px;
+    font-style: Helvetica;
+
+}
+
+.simple-box1{
+    color:black;
+    max-width: 800px;
+    padding: 20px 5px;
+    background: lightgray;
+    display: block;  position: absolute;
+    width: 800px;
+    height: 450px;
+    top: -30px;
+    left: 125px;
+    border: 5px solid black;
+    border-radius: 8px;
+    font-style: Helvetica;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.bold { font-weight: bold;
+font-size:xx-large;
+padding: 20px;
+}
+.red { color: #FF0000; }
+.yellow-background { background-color: Yellow; }​
+
+.form-group{
+    width: 100%;
+    margin-top: 80px;
+    font-size: 60px;
+
+}
+
+.form-group label{
+    color:black;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family: Helvetica;
+    font-size: larger;
+}
+
+.form-group input,
+.form-group textarea{
+    top: 100px;
+    width: 90%;
+    height: 75%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 18px;
+    background-color:darkslategray;
+    color: white;
+}
+
+textarea{
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 24 px;
+    border-radius: 8px;
+    margin-left: 15px;
+    font-family: Helvetica;
+    
+}
+
+.invbox{
+    color: black;
+    width: 1500px;
+    height: 500px;
+    left: 1400px;
+    top: 2000px;
+    margin-top: 100px;
+    margin-left: 120px;
+    font-family: Helvetica;
+}
+
+.child{
+    border: 10px solid white;
+    width: 250px;
+}
+
+.parent{
+    width: 1500px;
+    display: flex;
+}
+
+.child1{
+    border: 10px solid white;
+    width:250px;
+    position:absolute;
+    left: 620px;
+    top: 897px;
+}
