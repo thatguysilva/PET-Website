@@ -183,8 +183,7 @@ transition: width .3s
     opacity: 0.8;
 }
 
-/*trying to use same tag twice...*/
-/*ups doesnt work...will just use u1 instead...*/
+
 ul1{
     position: absolute;
     bottom: 2%;
